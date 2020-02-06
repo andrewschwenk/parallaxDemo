@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Parallax Demo</title>
 </head>
@@ -39,7 +40,7 @@
     </section>
 
     <div class="pimg2">
-        <div class="ptext">
+        <div class="ptext" data-aos="zoom-in">
             <span class="border trans">
                 Image Two Text
             </span>
@@ -69,7 +70,7 @@
     </section>
 
     <div class="pimg3">
-        <div class="ptext">
+        <div class="ptext" data-aos="zoom-in">
             <span class="border trans">
                 Image Three Text
             </span>
@@ -105,5 +106,12 @@
             </span>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 </html>
